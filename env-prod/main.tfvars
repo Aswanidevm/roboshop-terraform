@@ -1,5 +1,5 @@
 env = "prod"
-components = {
+component = {
 frontend = {}
 mongodb = {}
 catalogue = {}
