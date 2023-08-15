@@ -72,6 +72,4 @@ tags= {
     business_unit = "retail"
     cost_center = "322"
     project_name = " roboshop"
-    env = "dev"
-    Name
 }
