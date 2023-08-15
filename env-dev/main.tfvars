@@ -64,3 +64,14 @@ component = {
         }
     }
 }
+
+
+tags= {
+    company_name = "XYZ tech"
+    business = "ecommerce"
+    business_unit = "retail"
+    cost_center = "322"
+    project_name = " roboshop"
+    env = "dev"
+    Name
+}
