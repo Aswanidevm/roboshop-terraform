@@ -9,7 +9,7 @@
 
 
 
-module ec2 {
+module vpc {
     for_each = var.vpc
     source = "git::https://github.com/Aswanidevm/tf-module-vpn.git"
     # env = var.env
