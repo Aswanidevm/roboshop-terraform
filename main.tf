@@ -9,9 +9,9 @@
 
 
 
-module vpc {
+module "vpc" {
     for_each = var.vpc
-    source = "git::https://github.com/Aswanidevm/tf-module-vpn.git"
+    source = "git::https://github.com/Aswanidevm/tf-module-vpc.git"
     # env = var.env
     cidr_block = each.value["cidr_block"]
     # tags = merge(each.value["tags"], var.tags)
