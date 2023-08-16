@@ -14,6 +14,6 @@ module ec2 {
     source = "git::https://github.com/Aswanidevm/tf-module-vpn.git"
     env = var.env
     cidr_blocks = each.value["cidr_blocks"]
-    tags = merge(each.value["tags"], var.tags)
+    # tags = merge(each.value["tags"], var.tags)
 } 
 
