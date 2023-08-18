@@ -12,16 +12,12 @@
 module "vpc" {
    
     source = "git::https://github.com/Aswanidevm/tf-module-vpc.git"
-     for_each = var.vpc
-   
-    cidr_block = each.value["cidr_block"]
     
-    env = var.env
-
-    # azs             = ["eu-east-1a", "eu-east-1b"]
+    for_each = var.vpc
+    cidr_block = each.value["cidr_block"]
     subnets = each.value["subnets"]
     
-
+    env = var.env
     tags = var.tags
 }
  
