@@ -3,5 +3,5 @@ variable "component" {}
 variable "tags" {}
 variable "vpc" {}
 variable "default_vpc_id" {}
-variable "subnet_ids" {}
+variable "subnet_id" {}
 
