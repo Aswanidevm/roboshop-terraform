@@ -30,5 +30,5 @@ module "app-server" {
     vpc_id = lookup(lookup(module.vpc,"main", null), "vpc_id", null)
     tags = var.tags
     subnet_id = lookup(lookup(lookup(lookup(module.vpc,"main",null), "subnet_ids",null), "app",null),"subnet_ids",null)[0]
-    # module.vpc.subnet_ids.main.subnet_ids.app.subnet_ids[0]
+    vpc_id =lookup(lookup(module.vpc,"main",null), "vpc_id", null)
 }
